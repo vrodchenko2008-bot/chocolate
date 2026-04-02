@@ -3,31 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Для коханої людини</title>
+  <title>Для коханої людини — Чай</title>
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(to bottom, #f5e6d3, #f0c9a4);
+      background: linear-gradient(to bottom, #d8f3dc, #95d5b2);
       font-family: Arial, sans-serif;
     }
 
     .container {
       text-align: center;
-      padding: 15px;
-      width: 100%;
+      padding: 20px;
     }
 
     img {
-      width: 85vw;
-      max-width: 380px;
-      height: auto;
+      width: 80vw;
+      max-width: 360px;
       cursor: pointer;
       transition: transform 0.3s;
-      border-radius: 12px;
     }
 
     img:hover {
@@ -42,6 +39,7 @@
       width: 100%;
       height: 100%;
       background: rgba(0,0,0,0.5);
+      display: flex;
       justify-content: center;
       align-items: center;
       padding: 15px;
@@ -49,72 +47,39 @@
 
     .modal-content {
       background: white;
-      padding: 20px;
-      border-radius: 15px;
+      padding: 22px;
+      border-radius: 16px;
       text-align: center;
-      width: 100%;
-      max-width: 320px;
+      width: 90%;
+      max-width: 300px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-      animation: fadeIn 0.3s ease;
     }
 
     .modal-content p {
       font-size: 16px;
-      line-height: 1.5;
-    }
-
-    button {
-      margin-top: 15px;
-      padding: 12px 20px;
-      border: none;
-      background: #8b4513;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 14px;
-      width: 100%;
-    }
-
-    button:hover {
-      background: #a0522d;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <img src="photo.png" alt="Шоколадка" onclick="openModal()">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Tea_in_glass.jpg" alt="Чай" onclick="openModal()">
 </div>
 
 <div class="modal" id="modal">
   <div class="modal-content">
     <p>
-      Для найріднішої людини ❤️<br><br>
-      Ти робиш мій світ теплішим, яскравішим і солодшим, як ця шоколадка 🍫<br>
-      Дякую, що ти є 💕
+      Для найріднішої людини 💚<br><br>
+      Нехай цей чай зігріє тебе так само, як твої слова гріють мене ☕
+      Ти — мій спокій і тепло 🌿
     </p>
-    <button onclick="goToLink()">Хочу ще чай ☕</button>
   </div>
 </div>
 
 <script>
   function openModal() {
     document.getElementById('modal').style.display = 'flex';
-  }
-
-  function goToLink() {
-    window.location.href = "https://vrodchenko2008-bot.github.io/tea/";
   }
 
   window.onclick = function(event) {
