@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Для любимого человека</title>
+  <title>Для коханої людини</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,14 +17,17 @@
 
     .container {
       text-align: center;
-      padding: 20px;
+      padding: 15px;
+      width: 100%;
     }
 
     img {
-      width: 80vw;
-      max-width: 350px;
+      width: 85vw;
+      max-width: 380px;
+      height: auto;
       cursor: pointer;
       transition: transform 0.3s;
+      border-radius: 12px;
     }
 
     img:hover {
@@ -49,9 +52,10 @@
       padding: 20px;
       border-radius: 15px;
       text-align: center;
-      width: 90%;
-      max-width: 300px;
+      width: 100%;
+      max-width: 320px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 0.3s ease;
     }
 
     .modal-content p {
@@ -68,10 +72,22 @@
       border-radius: 8px;
       cursor: pointer;
       font-size: 14px;
+      width: 100%;
     }
 
     button:hover {
       background: #a0522d;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   </style>
 </head>
@@ -84,11 +100,11 @@
 <div class="modal" id="modal">
   <div class="modal-content">
     <p>
-      Для самого любимого человека ❤️<br><br>
-      Ты делаешь мой мир теплее, ярче и вкуснее, как эта шоколадка 🍫
-      Спасибо, что ты есть 💕
+      Для найріднішої людини ❤️<br><br>
+      Ти робиш мій світ теплішим, яскравішим і солодшим, як ця шоколадка 🍫<br>
+      Дякую, що ти є 💕
     </p>
-    <button onclick="goToLink()">Хочу ещё чай ☕</button>
+    <button onclick="goToLink()">Хочу ще чай ☕</button>
   </div>
 </div>
 
@@ -98,7 +114,6 @@
   }
 
   function goToLink() {
-    // ВСТАВЬ СЮДА СВОЮ ССЫЛКУ
     window.location.href = "https://vrodchenko2008-bot.github.io/tea/";
   }
 
